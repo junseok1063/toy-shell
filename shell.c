@@ -55,6 +55,7 @@ int main(void)
             command[len - 1] = '\0'; 
         }
         if(strncmp(command, "exit", strlen(command))==0) {
+            printf("Exit!");
             return -1;
         }
         char HomeDir[]="/home/";
@@ -65,6 +66,8 @@ int main(void)
             cwd=chdir(ChangeHomeDir);
             cwd=ChangeHomeDir;
         }
+
+
       
         printf("%d\n", len);
         
