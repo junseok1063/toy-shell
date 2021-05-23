@@ -66,6 +66,9 @@ int main(void)
             cwd=chdir(ChangeHomeDir);
             cwd=ChangeHomeDir;
         }
+        if(strncmp(command, "pwd", strlen(command))==0){
+            printf("%s\n",cwd);
+        }
 
 
       
